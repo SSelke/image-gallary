@@ -52,7 +52,7 @@ h1, h2 {
 }
 
 .users {
-	background: red;
+	background: #4b5658;
 	background-image: url(../img/man.jpeg);
 	background-size: 100%;
 	background-position: center;
@@ -71,7 +71,7 @@ h1, h2 {
 }
 
 .posts {
-	background: blue;
+	background: white;
 	background-image: url(../img/girl.jpeg);
 	background-size: 100%;
 	background-position: center;
