@@ -1,14 +1,23 @@
 document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
   var dataText = ["how people express themselves. See people like never before as if you were in thier shoes."];
-  
+  // start a typewriter animation for a text in the dataText array
+   function StartTextAnimation(x) {
+     // check if dataText[i] exists
+    if (x < dataText[x].length) {
+      // text exists! start typewriter animation
+     typeWriter(dataText[x], 0, function(){
+     });
+    }
+  }
+
   // type one text in the typwriter
   // keeps calling itself until the text is finished
   function typeWriter(text, x, fnCallback) {
     // chekc if text isn't finished yet
     if (x < (text.length)) {
       // add next character to h1
-     document.querySelector("h2").innerHTML = text.substring(0, x+1) +'<span aria-hidden="true"></span>';
+     document.querySelector("h2").innerHTML = text.substring(0, x+1);
 
       // wait for a while and call this function again for next character
       setTimeout(function() {
@@ -21,15 +30,7 @@ document.addEventListener('DOMContentLoaded',function(event){
       setTimeout(fnCallback, 1000);
     }
   }
-  // start a typewriter animation for a text in the dataText array
-   function StartTextAnimation(x) {
-     // check if dataText[i] exists
-    if (x < dataText[x].length) {
-      // text exists! start typewriter animation
-     typeWriter(dataText[x], 0, function(){
-     });
-    }
-  }
+
   // start the text animation
   StartTextAnimation(0);
 });
