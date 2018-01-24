@@ -1,12 +1,41 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
 body{
 	background: #4b5658;
 	padding-top: 70px;
 	color: black;
 }
 
+h1,h2,h4,p {
+	text-align: center;
+}
+
+h2 {
+	font-size: 50px;
+}
+
+ul.faq {
+	width: 23%;
+	margin: 0 auto;
+	list-style: none;
+}
+
+p.description {
+	font-size: 20px;
+	margin: 0 auto; 
+	width: 400px;
+}
+
+.centered {
+	margin: 0 auto;
+}
+
 .faq {
 	display: none;
-}
+ }
 
 .explore-button:hover {
 	color: white;
