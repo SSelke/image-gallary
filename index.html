@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
@@ -24,69 +25,101 @@
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Sign Up</a></li>
-					<li><a href="#">Login</a></li>
+					<li><a href="#" id="sign-up-btn">Sign Up</a></li>
+					<li><a href="#" id="login-btn">Login</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
+  <div id="pop-up" class="login">
+      <div class="container">
+          <h1>Login | The Image Gallery</h1>
+          <form action="" method="">
+            <label for="username">Email or Phone</label>
+            <input type="text" id="username" name="username" class="form-group" placeholder="Enter Username">
+            <label for="password">Password</label>
+            <input type="text" id="password" name="password" class="form-group" placeholder="Enter Password">
+            <button class="btn btn-lg btn-primary">Login</button>
+          </form>
+          <div class="cross cross-log">x</div>
+      </div>
+  </div>
+
+  <div id="pop-up" class="signUp">
+      <div class="container">
+          <h1>Sign Up!</h1>
+          <p>See what you've been missing</p>
+          <form action="" method="">
+            <label for="username">Enter an Email or Phone</label>
+            <input type="text" id="username" name="username" class="form-group" placeholder="Enter Email or Phone">
+            <label for="password">Password</label>
+            <input type="text" class="password" name="password" class="form-group" placeholder="Password">
+            <input type="text" class="password" name="password-again" class="form-group" placeholder="Password Again">
+            <button class="btn btn-lg btn-primary">Sign Up!</button>
+          </form>
+          <div class="cross cross-sign">x</div>
+      </div>
+  </div>
+
   <div class="container">
+    <div id="blur">
+    	<div class="jumbotron">
+      	<h1><i class="fa fa-camera-retro" aria-hidden="true"></i> The Image Gallery </h1>
+      	<p>A bunch of beautiful images that I didn't take. Enjoy!</p> 
+    	</div>
 
-  	<div class="jumbotron">
-    	<h1><i class="fa fa-camera-retro" aria-hidden="true"></i> The Image Gallery </h1>
-    	<p>A bunch of beautiful images that I didn't take. Enjoy!</p> 
-  	</div>
-
-    <div class="row">
-      <div class="col-lg-4 col-sm-6">
-        <div class="thumbnail">
-          <img class="image" src="https://source.unsplash.com/XY9tbPYhR34">
+      <div class="row">
+        <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+            <img class="image" src="https://source.unsplash.com/XY9tbPYhR34">
+          </div>
         </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="thumbnail">
-          <img src="https://source.unsplash.com/UdURxHDhrgY">
+        <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+            <img src="https://source.unsplash.com/UdURxHDhrgY">
+          </div>
         </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="thumbnail">
-          <img src="https://source.unsplash.com/XY9tbPYhR34">
+        <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+            <img src="https://source.unsplash.com/XY9tbPYhR34">
+          </div>
         </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="thumbnail">
-          <img src="https://source.unsplash.com/L-7cP4p5hik">
+        <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+            <img src="https://source.unsplash.com/L-7cP4p5hik">
+          </div>
         </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="thumbnail">
-          <img src="https://source.unsplash.com/C6duwascOEA">
+        <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+            <img src="https://source.unsplash.com/C6duwascOEA">
+          </div>
         </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="thumbnail">
-          <img src="https://source.unsplash.com/o-fmysR2y7Y">
+        <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+            <img src="https://source.unsplash.com/o-fmysR2y7Y">
+          </div>
         </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="thumbnail">
-          <img src="https://source.unsplash.com/62OK9xwVA0c">
+        <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+            <img src="https://source.unsplash.com/62OK9xwVA0c">
+          </div>
         </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="thumbnail">
-          <img src="https://source.unsplash.com/hFU3FJfVycM">
+        <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+            <img src="https://source.unsplash.com/hFU3FJfVycM">
+          </div>
         </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="thumbnail">
-          <img src="https://source.unsplash.com/xCfHL21VpDk">
+        <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+            <img src="https://source.unsplash.com/xCfHL21VpDk">
+          </div>
         </div>
-      </div>
-  	</div>
-
+    	</div>
+    </div>
+  </div>
 <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>

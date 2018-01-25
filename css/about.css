@@ -4,11 +4,11 @@ body{
 	color: white;
 }
 
-div {
+/*div {
 	display: block;
 	overflow: auto;
 	margin: 0 auto;
-}
+}*/
 
 section {
 	margin: 0 auto;
@@ -22,6 +22,93 @@ h1, h2 {
 	text-align: left;
 }
 
+/*FOR THE LOGIN AND SIGNUP PAGES*/
+
+#pop-up h1,p{
+	color: white;
+	text-align: center;
+	padding: 0;
+}
+
+.pop-up{
+  position: relative;
+  z-index: 9999; 
+  top: -400px; 
+  width: 800px; 
+  margin: 0 auto; 
+  text-align: center;
+}
+
+#pop-up .container{
+  background: #4b5658; 
+  border-radius: 10px;
+  padding: 30px; 
+  position: absolute; 
+  top:  -400px; 
+  width: 100%; 
+  box-sizing: border-box;
+  display: hidden;
+}
+
+.pop-up input{
+  padding: 10px;
+  border: 0;
+  border: 1px solid #333;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+form input,button{
+	display: block;
+	margin: 0 auto;
+	width: 300px;
+}
+
+form h1{
+	margin-bottom: 30px;
+}
+
+form button{
+	margin-top: 15px; 
+}
+
+.cross{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #555;
+  color: #ddd;
+  font-weight: bold;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  border-radius: 11px;
+}
+
+.pop-up{
+  top: -400px;
+  animation: drop 0.5s ease forwards;
+}
+
+.animate{
+  top: -800px;
+  animation: rise 2s ease forwards;
+}
+
+@keyframes drop{
+  0%{ opacity: 0; }
+  70%{ transform: translateY(700px); }
+  100%{ transform: translateY(650px); opacity: 1; }
+}
+
+@keyframes rise{
+	0%{ transform: translateY(700px); opacity: 1; }
+	30%{ opacity: 0.5; }
+	100%{ transform: translateY(-400px); opacity: 0; }
+}
+
+/*DONE*/
+
 .container h1 {
 	font-size: 5vw;
 }
@@ -30,10 +117,7 @@ h1, h2 {
 	font-size: 6vw;
 }
 
-.container {
-	width: 250px; /*Backup for IE*/
-	width: 80%;
-}
+
 
 .jumbotron{
 	background: #ecf0f1;
