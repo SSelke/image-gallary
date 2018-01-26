@@ -46,10 +46,10 @@ color: white;
   font-size: 18px;
 }
 
-form input,button{
+.drop-down-form input[type="text"]{
 	display: block;
 	margin: 0 auto;
-	width: 300px;
+	width: 50%;
 }
 
 form h1{
