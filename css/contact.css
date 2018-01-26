@@ -33,9 +33,10 @@ p.description {
 /*FOR THE LOGIN AND SIGNUP PAGES*/
 .pop-up{
   color: white;
-  position: relative;
+  position: fixed;
   z-index: 9999; 
   top: -400px; 
+  left: 50%;
   width: 800px; 
   margin: 0 auto; 
   text-align: center;
@@ -43,9 +44,11 @@ p.description {
 
 #pop-up .container{
   background: #4b5658; 
+  position: fixed;
   border-radius: 10px;
   padding: 30px; 
   position: absolute; 
+  transform: translate(-50%, 0%); 
   top:  -400px; 
   width: 100%; 
   box-sizing: border-box;

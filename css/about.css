@@ -31,9 +31,10 @@ h1, h2 {
 }
 
 .pop-up{
-  position: relative;
+  position: fixed;
   z-index: 9999; 
   top: -400px; 
+  left: 50%;
   width: 800px; 
   margin: 0 auto; 
   text-align: center;
@@ -43,7 +44,8 @@ h1, h2 {
   background: #4b5658; 
   border-radius: 10px;
   padding: 30px; 
-  position: absolute; 
+  position: absolute;
+  transform: translate(-50%, 0%); 
   top:  -400px; 
   width: 100%; 
   box-sizing: border-box;
